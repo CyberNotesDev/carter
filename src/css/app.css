@@ -1,0 +1,50 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-image: url("./../images/space.webp");
+    background-repeat: no-repeat;
+
+    color: white;
+    font-size: 16px;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    padding: 1.5rem;
+    width: 100%;
+}
+
+section {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    
+    background-color: #838383;
+    width: 100%;
+    max-width: 50%;
+    height: 50vh;
+}
+
+section a {
+    background-color: #f08080;
+    color: #fff;
+    text-transform: uppercase;
+    text-align: center;
+    text-decoration: none;
+    
+    padding: 1.5rem;
+    max-width: 60%;
+    width: 100%;
+}
+
+section a:hover {
+    color: #7CB9E8;
+    transform: scale(1.1);
+}
