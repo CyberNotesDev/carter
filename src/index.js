@@ -10,9 +10,8 @@ import {
 const router = createBrowserRouter([
   {
     path: "/carter",
-    element: (
-      <App />
-    ),
+    element: <App />,
+    errorElement: <p>404</p>,
   },
   {
     path: "vote",
@@ -29,7 +28,7 @@ const router = createBrowserRouter([
   {
     path: "Content",
     element: <div>content</div>,
-  }
+  },
 ]);
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
