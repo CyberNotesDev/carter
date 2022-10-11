@@ -2,7 +2,7 @@ import React, { useEffect } from "react";
 import "./css/app.css";
 import { Header } from "./components/Header";
 import { Footer } from "./components/Footer";
-import { Link } from "react-router-dom";
+import { Link, Outlet } from "react-router-dom";
 
 import animate from "./modules/animate";
 
@@ -14,10 +14,11 @@ function App() {
   return (
     <div className="app">
       <Header />
-
+      <Outlet />
+      
       <main>
         <section>
-          <Link to="/vote" id="vote">
+          <Link to="/carter/vote" id="vote">
             Vote
           </Link>
           <Link to="/philosophy" id="philosophy">
@@ -33,6 +34,7 @@ function App() {
       </main>
 
       <Footer />
+      <Outlet />
     </div>
   );
 }
