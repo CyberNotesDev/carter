@@ -1,7 +1,13 @@
 import React from "react";
+import { Article } from "./article";
+import styles from "./vote.modules.css";
 
-export function Vote() {
-    return (
-        <h1>Vote</h1>
-    )
+function Vote() {
+
+  return (
+    <div>
+      {/* <Article image={} title={} description={} /> */}
+    </div>
+  )
+
 }

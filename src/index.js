@@ -12,13 +12,29 @@ import {
 
 const router = createBrowserRouter([
   {
-    path: "/carter/",
+    path: "/carter",
     element: <App />,
-    errorElement: <ErrorPage />,
+    errorElement: <p>404</p>,
     children: [
       {
-        path: "/vote",
+        path: "/carter",
+        element: <Home />
+      },
+      {
+        path: "carter/vote",
         element: <Vote />,
+      },
+      {
+        path: "carter/philosophy",
+        element: <div>Philosophy</div>,
+      },
+      {
+        path: "carter/merch",
+        element: <div>Merch</div>,
+      },
+      {
+        path: "carter/content",
+        element: <div>content</div>,
       },
     ],
   },
